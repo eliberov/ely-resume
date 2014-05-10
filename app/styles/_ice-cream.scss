@@ -1,0 +1,57 @@
+
+.myicecream {
+  padding: 100px;
+  text-align: center;
+}
+
+.icecream {
+  position: relative;
+  display: inline-block;
+  width: 74px;
+  height: 121px;
+  background: #7d98d1;
+  border-top: solid 45px #85c3cd;
+  border-bottom: solid 39px #b7a7d4;
+}
+.icecream, .icecream:before {
+  -moz-border-radius-topleft: 50% 34px;
+  -webkit-border-top-left-radius: 50% 34px;
+  border-top-left-radius: 50% 34px;
+  -moz-border-radius-topright: 34px 34px;
+  -webkit-border-top-right-radius: 34px 34px;
+  border-top-right-radius: 34px 34px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.icecream:before {
+  -moz-box-shadow: inset 16px 0 0 0 rgba(0, 0, 0, 0.2), inset -16px 0 0 0 rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 16px 0 0 0 rgba(0, 0, 0, 0.2), inset -16px 0 0 0 rgba(255, 255, 255, 0.3);
+  box-shadow: inset 16px 0 0 0 rgba(0, 0, 0, 0.2), inset -16px 0 0 0 rgba(255, 255, 255, 0.3);
+  content: " ";
+  position: absolute;
+  top: -45px;
+  left: 0;
+  right: 0;
+  bottom: -39px;
+}
+.icecream:after {
+  -moz-border-radius: 0 0 200px 200px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 200px 200px;
+  -moz-box-shadow: inset 7px 0 0 0 rgba(0, 0, 0, 0.2), inset -7px 0 0 0 rgba(255, 255, 255, 0.3), 20px -175px 0 7px white;
+  -webkit-box-shadow: inset 7px 0 0 0 rgba(0, 0, 0, 0.2), inset -7px 0 0 0 rgba(255, 255, 255, 0.3), 20px -175px 0 7px white;
+  box-shadow: inset 7px 0 0 0 rgba(0, 0, 0, 0.2), inset -7px 0 0 0 rgba(255, 255, 255, 0.3), 20px -175px 0 7px white;
+  content: " ";
+  position: absolute;
+  background: #c68a5d;
+  width: 24px;
+  height: 68px;
+  bottom: -107px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

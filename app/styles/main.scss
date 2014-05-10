@@ -1,0 +1,166 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+@import 'animate-perspective';
+@import 'factory';
+@import 'particle-world';
+@import 'ice-cream';
+
+.jumbotron {
+	padding: 15px !important;
+}
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+$grey:#9b9b9b;
+$background:black;
+$text:#333;
+
+
+/* entypo icon fonts*/
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+/* gota have 50px top margin b.c bootstrap and secondary tb*/
+html, body {
+  margin: 5px 0px 0px 0px;
+}
+.overflow-auto{
+  overflow:auto;
+}
+
+@for $i from 1 through 20 {
+  .margin-top-#{$i*5} { margin-top: #{$i*5px} }
+  .margin-right-#{$i*5} { margin-right: #{$i*5px} }
+  .margin-left-#{$i*5} { margin-left: #{$i*5px} }
+  .margin-bottom-#{$i*5} { margin-bottom: #{$i*5px} }
+  .height-#{$i*5}-px { height: #{$i*5px} }
+  .height-#{$i*5}-percent { height: #{$i*5%} }
+}
+
+body {
+    background: $background;
+    font-family: 'Titillium Web', sans-serif;
+    color:$text;
+}
+h1, h2, h3, h4, h5, h6, h7 {
+  font-family: 'Titillium Web', sans-serif;
+}
+.no-bullets, .no-bullets li {
+    list-style-type: none;
+    padding: 0;
+}
+.inline-list > li {
+	display: inline-block; padding: 3px;
+}
+.mystuff {
+  position:fixed;
+  top:20px;
+  left:20px;
+  background-color:black;
+  z-index:999;
+  height:50px;
+  opacity:.30;
+  transition: height 0.4s;
+  &:hover{
+  height:500px;
+  }
+}
+
+.full-width{
+	width: 100%;
+	height: auto;
+}
